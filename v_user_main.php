@@ -15,24 +15,26 @@
     crossorigin="anonymous">
   </head>
   <body>
+    <?php require('top_user.php'); ?>
     <div class="wrap" id="wrap">
-      <header class="header" style="padding:5px">
+      <!-- <header class="header" style="padding:5px">
         <?php echo "Name: {$_SESSION['user_name']}"; ?>
+        <?php echo "Name: dlwnsgml"; ?>
         <input type="button" name="logout_bt" value="로그아웃"
           onclick="location.href='v_login.php'"><br>
         <p>
           <a href="v_user_main.php?id=ebook" name="go_main_bt">메인으로(LOGO)</a>
         </p>
-      </header>
+      </header> -->
       <div class="content">
-        <div class="aside"> <!--사이드바, 회원 기능 메뉴 -->
+        <!-- <div class="aside">
           <ul style="list-style:none;">
             <div style="padding:20px;"></div>
             <li><a class="aside_list" href="v_user_main.php?id=ebook">도서검색<br><br></a></li>
             <li><a class="aside_list" href="v_user_main.php?id=rent_list">대출목록조회<br><br></a></li>
             <li><a class="aside_list" href="v_user_main.php?id=reserve_list">예약목록조회</a></li>
           </ul>
-        </div>  <!--사용자 요청 페이지 화면(URL 파라미터 id값으로 구분)-->
+        </div>  -->
         <div class="main" style="width:100%;height:810px;overflow-y:auto;overflow-x:hidden; padding:20px">
           <?php
           if (!isset($_GET['id'])) {  // id is not set
